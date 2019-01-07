@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {<br>
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Background
+  ========================================
+*/
+html {
+	background-size: cover;
+	background-color: #000;
+}
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+	color: #FFDE5A;
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+  color: #FF0000;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite,
+em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
+
+/* Opacity */
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+/* Image */
+.imgwanted1 {
+	position: relative;
+	height: 200px;
+	width: 257px;
+	text-align: center;
+	color: white;
+	max-width: 100%;	/* responsive */
+	height: auto;
+}
+
+.imgwanted1 :hover {
+
+	transition: height 2s ease-in 3s;
+}
+
+/* Centered name text */
+.name1 {
+    font-size: 30px;
+	position: absolute;
+    bottom: 2%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+	color: white
+}
+.imgwanted1:hover .name1 {
+
+	font-size: 20px;
+	opacity: 65;
+	position: absolute;
+	bottom: -10%;
+	left: 80%;
+	text-align: center;
+    color: yellow;
+}
+
+.reward1 {
+
+	position: absolute;
+	font-size: 20px;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    color: white;
+	text-align: center;
+	border-radius: 25px;
+    padding: 20px;
+	opacity: 50;
+}
+
+.reward1 span {
+
+	color: rgb(248, 148, 80);
+
+}
+
+.imgwanted1:hover .reward1 {
+
+	display: none;
+	opacity: 0;
+
+	/* transition effect. not necessary */
+	/*transition: opacity .2s, visibility .2s;/
